@@ -1,0 +1,20 @@
+{
+  "name": "testbower",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize-css": "^7.0.0",
+    "lodash": "^4.17.5",
+    "bootstrap": "^4.0.0"
+  }
+}
