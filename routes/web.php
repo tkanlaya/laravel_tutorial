@@ -30,7 +30,7 @@ Route::get('movieview',"MovieController@view");
 Route::get('song','music\SongController@index');
 Route::get('songplay','music\SongController@play');
 
-
+echo "testtt";
 
 
 
