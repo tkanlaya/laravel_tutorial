@@ -29,6 +29,7 @@ Route::get('movie','MovieController@index');
 Route::get('movieview',"MovieController@view"); 
 Route::get('song','music\SongController@index');
 Route::get('songplay','music\SongController@play');
+Route::get('band','music\SongController@band');
 
 echo "testtt";
 

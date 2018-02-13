@@ -12,31 +12,40 @@ class SongController extends Controller
 		# code...
 	}
 
-	public function index()
+	// public function index()
+	// {
+	// 	// return'Hello From Somg Controller';
+	// 	return view('song/index');
+	// }
+
+	// public function play()
+	// {
+	// 	// return view('song/player')
+	// 	// ->with('band','oasis')
+	// 	// ->with('album','Morning');
+
+
+	// 	// return view('song/player')->with(['band'=>'oasis',
+	// 	// 	'album'=>'Slide away'
+	// 	// ]);
+
+	// 	// returm view('song/player')->withBand('oasis')->withBand
+
+	// 	// $this->data= array(
+
+	// 	// )
+
+	// 	return view('song/player');
+	// }
+
+	public function band()
 	{
-		// return'Hello From Somg Controller';
-		return view('song/index');
+		$this->data = array(
+			'band'=>'metallica',
+			'song'=>'black'
+
+		);
+		return view('song/band', $this->data);
 	}
-
-	public function play()
-	{
-		// return view('song/player')
-		// ->with('band','oasis')
-		// ->with('album','Morning');
-
-
-		// return view('song/player')->with(['band'=>'oasis',
-		// 	'album'=>'Slide away'
-		// ]);
-
-		// returm view('song/player')->withBand('oasis')->withBand
-
-		// $this->data= array(
-
-		// )
-
-		return view('song/player');
-	}
-
 	
 }
