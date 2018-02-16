@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+
+<style type="text/css"> 
+	.css1 {
+		font-size: 11px;
+		font-weight: bold;
+		color: #000000;
+	}
+	.css2 {
+		font-size: 20;
+		font-weight: bold;
+		color: #FF0000;
+	}
+</style>
+
+<script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	/*** btnHide Event ***/
+  $("#btnHide").click(function(){
+    $("p").hide();
+  });
+	/** btnShow Event ***/
+  $("#btnShow").click(function(){
+    $("p").show();
+  });
+
+
+
+	/*** btnHideCss1 Event ***/
+  $("#btnHideCss1").click(function(){
+    $(".css1").hide();
+  });
+	/*** btnShowCss1 Event ***/
+  $("#btnShowCss1").click(function(){
+    $(".css1").show();
+  });
+
+
+
+	/*** btnCss1 Event ***/
+  $("#btnCss1").click(function(){
+	$("#mytext").removeClass();
+    $("#mytext").addClass("css1");
+  });
+	/*** btnCss2 Event ***/
+  $("#btnCss2").click(function(){
+	$("#mytext").removeClass();
+    $("#mytext").addClass("css2");
+  });
+
+
+});
+</script>
+</head>
+
+<body>
+
+	<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>

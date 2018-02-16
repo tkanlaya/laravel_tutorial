@@ -162,12 +162,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Illuminate\html\HtmlServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
+        
 
         /*
          * Application Service Providers...
@@ -226,8 +226,9 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
-        'HTML'=> Illuminate\html\HtmlFacades,
+        'View' => Collective\Support\Facades\View::class,
+        'Form'=> Collective\Html\FormFacades::class,
+        'Html'=> Collective\Html\HtmlFacades::class,
 
     ],
 

@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\music;
+use DB;
 use App\Http\Controllers\Controller;
 
 
 class SongController extends Controller
 {
+
 	
 	function __construct()
 	{
@@ -40,9 +42,14 @@ class SongController extends Controller
 
 	public function band()
 	{
+		$aCss = array('css/song/style.css');
+		$aScript = array('ja/song/main/js');
 		$this->data = array(
+			'title'=>'Music band',
 			'band'=>'metallica',
-			'song'=>'black'
+			'song'=>'<u>black</u>',
+			'style'=>$aCss,
+			'script'=>$aScript
 
 		);
 		return view('song/band', $this->data);
